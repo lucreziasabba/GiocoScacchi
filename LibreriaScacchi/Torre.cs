@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace LibreriaScacchi
 {
-    public class Torre
+    public class Torre:Pezzo
     {
+        public Torre(Colore schieramento) : base(5, schieramento) { }
+
+        public override void Muovi(Cella nuovaPosizione)
+        {
+            if (nuovaPosizione.Lettera == Posizione.Lettera ||
+                nuovaPosizione.Numero == Posizione.Numero)
+            {
+                Posizione = nuovaPosizione;
+            }
+            else
+                Errore();
+        }
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibreriaScacchi
 {
-    class Colore
+    public enum Colore
     {
+        Bianco,
+        Nero
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibreriaScacchi
 {
-    class Scacchiera
+    public class Scacchiera
     {
+        public static Scacchiera Istanza
+    
     }
 }
